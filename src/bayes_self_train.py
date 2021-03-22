@@ -31,8 +31,8 @@ from uncertainty import *
 class SE_DenseNet:
     '''
     Obersevations: https://archive.org/details/github.com-liuzhuang13-DenseNet_-_2017-07-23_18-42-00
-    -Wide-DenseNet-BC (L=40, k=36) uses less memory/time while achieves about the same accuracy as DenseNet-BC (L=100, k=12).
-    -Wide-DenseNet-BC (L=40, k=48) uses about the same memory/time as DenseNet-BC (L=100, k=12), while is much more accurate.
+    -Wide-DenseNet-BC (L=40, k=36) uses less memory/time while achieving about the same accuracy as DenseNet-BC (L=100, k=12).
+    -Wide-DenseNet-BC (L=40, k=48) uses about the same memory/time as DenseNet-BC (L=100, k=12), and is much more accurate.
     '''
     def __init__(self, img_size=(32,32,3), growth_rate=48, trans_ratio=0.5,
         SE_ratio=16, n_classes=10, weight_decay=1e-4, depth=40, n_dense_blocks=3,
